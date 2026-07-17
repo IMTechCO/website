@@ -47,7 +47,7 @@ export default function Footer() {
             <div className="mt-8 flex gap-5 text-2xl">
 
               <a
-                href="https://linkedin.com"
+                href="https://linkedin.com/imtechco"
                 target="_blank"
                 className="transition hover:text-blue-500"
               >
@@ -55,7 +55,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://github.com"
+                href="https://github.com/imtechco"
                 target="_blank"
                 className="transition hover:text-blue-500"
               >
@@ -63,7 +63,7 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://facebook.com"
+                href="https://facebook.com/imtechco"
                 target="_blank"
                 className="transition hover:text-blue-500"
               >

@@ -113,9 +113,9 @@ const structuredData = {
   },
 
   sameAs: [
-    "https://facebook.com/imtech",
-    "https://linkedin.com/company/imtech",
-    "https://github.com/imtech",
+    "https://facebook.com/imtechco",
+    "https://linkedin.com/company/imtechco",
+    "https://github.com/imtechco",
   ],
 };
 
