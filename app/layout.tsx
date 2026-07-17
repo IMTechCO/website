@@ -105,7 +105,7 @@ const structuredData = {
 
   inLanguage: "es-CO",
 
-  email: "contacto@imtech.com.co",
+  email: "gerencia.imtech@outlook.com",
 
   address: {
     "@type": "PostalAddress",

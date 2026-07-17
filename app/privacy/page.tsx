@@ -180,7 +180,7 @@ export default function PrivacyPage() {
 
               Correo electrónico:<br />
 
-              contacto@imtech.com.co<br />
+              gerencia.imtech@outlook.com<br />
 
               País:
 

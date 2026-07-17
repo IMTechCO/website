@@ -141,7 +141,7 @@ export default function TermsPage() {
             </p>
 
             <p className="mt-4 font-semibold text-blue-400">
-              contacto@imtech.com.co
+              gerencia.imtech@outlook.com
             </p>
           </section>
 
