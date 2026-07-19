@@ -11,7 +11,7 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://imtech.com.co"),
+  metadataBase: new URL("https://imtechco.vercel.app"),
 
   title: {
     default: "IM Tech | Soluciones Tecnológicas para Empresas",
@@ -47,7 +47,7 @@ export const metadata: Metadata = {
     description:
       "Transformamos tecnología en resultados mediante soluciones digitales a la medida.",
 
-    url: "https://imtech.com.co",
+    url: "https://imtechco.vercel.app",
 
     siteName: "IM Tech",
 
@@ -96,9 +96,9 @@ const structuredData = {
 
   name: "IM Tech",
 
-  url: "https://imtech.com.co",
+  url: "https://imtechco.vercel.app",
 
-  logo: "https://imtech.com.co/logo-horizontal.png",
+  logo: "https://imtechco.vercel.app/logo-horizontal.png",
 
   description:
     "Empresa especializada en desarrollo de software, automatización de procesos, infraestructura tecnológica y transformación digital.",

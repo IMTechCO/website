@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: "*",
       allow: "/",
     },
-    sitemap: "https://imtech.com.co/sitemap.xml",
+    sitemap: "https://imtechco.vercel.app/sitemap.xml",
   };
 }

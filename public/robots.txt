@@ -2,4 +2,4 @@ User-agent: *
 
 Allow: /
 
-Sitemap: https://imtech.com.co/sitemap.xml
+Sitemap: https://imtechco.vercel.app/sitemap.xml
