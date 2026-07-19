@@ -13,6 +13,10 @@ const geist = Geist({
 export const metadata: Metadata = {
   metadataBase: new URL("https://imtechco.vercel.app"),
 
+  verification: {
+    google: "uXp-svOT-nF3PmMAvRvPkKY1Irsrv7Dz9p9KIm6P3yM",
+  },
+
   title: {
     default: "IM Tech | Soluciones Tecnológicas para Empresas",
     template: "%s | IM Tech",
