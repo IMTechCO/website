@@ -5,6 +5,7 @@ import { Toaster } from "sonner";
 import "sonner/dist/styles.css";
 import Script from "next/script";
 import type { Metadata, Viewport } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 const geist = Geist({
   subsets: ["latin"],
@@ -152,6 +153,9 @@ export default function RootLayout({
           theme="dark"
         />
 
+        <GoogleAnalytics
+          gaId={process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID!}
+        />
       </body>
     </html>
   );
