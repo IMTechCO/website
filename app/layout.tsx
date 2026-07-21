@@ -27,14 +27,31 @@ export const metadata: Metadata = {
     "Impulsamos la transformación digital de las empresas mediante desarrollo de software, automatización de procesos, infraestructura tecnológica y soluciones a la medida.",
 
   keywords: [
+    "soporte tecnológico",
+    "soporte TI",
+    "infraestructura TI",
     "desarrollo de software",
-    "transformación digital",
     "automatización de procesos",
+    "inteligencia artificial",
     "desarrollo web",
     "software empresarial",
-    "consultoría TI",
-    "infraestructura tecnológica",
+    "consultoría tecnológica",
+    "transformación digital",
+    "redes empresariales",
+    "servidores",
     "IM Tech",
+    "sistemas tumaco",
+    "tecnología tumaco",
+    "soporte tecnológico tumaco",
+    "desarrollo de software tumaco",
+    "automatización de procesos tumaco",
+    "inteligencia artificial tumaco",
+    "desarrollo web tumaco",
+    "software empresarial tumaco",
+    "consultoría tecnológica tumaco",
+    "transformación digital tumaco",
+    "redes empresariales tumaco",
+    "servidores tumaco",
   ],
 
   authors: [
@@ -44,8 +61,12 @@ export const metadata: Metadata = {
   ],
 
   creator: "IM Tech",
+  publisher: "IM Tech",
   applicationName: "IM Tech",
   category: "Technology",
+  alternates: {
+    canonical: "/",
+  },
 
   openGraph: {
     title: "IM Tech | Soluciones Tecnológicas para Empresas",
@@ -88,6 +109,13 @@ export const metadata: Metadata = {
   robots: {
     index: true,
     follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
   },
 };
 
@@ -97,30 +125,84 @@ export const viewport: Viewport = {
 
 const structuredData = {
   "@context": "https://schema.org",
-  "@type": "Organization",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://imtechco.vercel.app/#organization",
 
-  name: "IM Tech",
+      name: "IM Tech",
 
-  url: "https://imtechco.vercel.app",
+      url: "https://imtechco.vercel.app",
 
-  logo: "https://imtechco.vercel.app/logo-horizontal.png",
+      logo: "https://imtechco.vercel.app/logo-horizontal.png",
 
-  description:
-    "Empresa especializada en desarrollo de software, automatización de procesos, infraestructura tecnológica y transformación digital.",
+      description:
+        "Empresa especializada en soporte tecnológico, infraestructura TI, desarrollo de software y automatización de procesos para empresas.",
 
-  inLanguage: "es-CO",
+      email: "gerencia.imtech@outlook.com",
 
-  email: "gerencia.imtech@outlook.com",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Tumaco",
+        addressRegion: "Nariño",
+        addressCountry: "CO",
+      },
 
-  address: {
-    "@type": "PostalAddress",
-    addressCountry: "CO",
-  },
+      sameAs: [
+        "https://facebook.com/imtechco",
+        "https://linkedin.com/company/imtechco",
+        "https://github.com/imtechco",
+        "https://youtube.com/@imtechco",
+      ],
+    },
 
-  sameAs: [
-    "https://facebook.com/imtechco",
-    "https://linkedin.com/company/imtechco",
-    "https://github.com/imtechco",
+    {
+      "@type": "WebSite",
+      "@id": "https://imtechco.vercel.app/#website",
+
+      url: "https://imtechco.vercel.app",
+
+      name: "IM Tech",
+
+      publisher: {
+        "@id": "https://imtechco.vercel.app/#organization",
+      },
+
+      inLanguage: "es-CO",
+    },
+
+    {
+      "@type": "LocalBusiness",
+      "@id": "https://imtechco.vercel.app/#localbusiness",
+
+      name: "IM Tech",
+
+      image: "https://imtechco.vercel.app/og-image.png",
+
+      url: "https://imtechco.vercel.app",
+
+      email: "gerencia.imtech@outlook.com",
+
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Tumaco",
+        addressRegion: "Nariño",
+        addressCountry: "CO",
+      },
+
+      areaServed: {
+        "@type": "Country",
+        name: "Colombia",
+      },
+
+      priceRange: "$$",
+
+      openingHours: "Mo-Fr 08:00-18:00",
+
+      parentOrganization: {
+        "@id": "https://imtechco.vercel.app/#organization",
+      },
+    },
   ],
 };
 

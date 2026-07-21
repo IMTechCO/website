@@ -16,129 +16,136 @@ export default function Footer() {
       <div className="h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
 
       <FadeUp>
-        <div className="mx-auto grid max-w-7xl gap-12 px-6 py-20 md:grid-cols-2 lg:grid-cols-4">
+        <div className="mx-auto max-w-7xl px-6 py-14">
 
-          {/* Empresa */}
-          <div>
-            <h2 className="text-3xl font-extrabold text-white">
-              <span>IM</span>
-              <span className="text-blue-500"> Tech</span>
-            </h2>
+          <div className="grid gap-12 lg:grid-cols-[1.3fr_1fr_1fr]">
 
-            <p className="mt-6 leading-7">
-              Transformamos tecnología en resultados mediante soluciones de
-              software, automatización e infraestructura para empresas.
-            </p>
+            {/* Empresa */}
+            <div>
+              <h2 className="text-3xl font-extrabold text-white">
+                IM<span className="text-blue-500"> Tech</span>
+              </h2>
 
-            <div className="mt-8 space-y-3">
+              <p className="mt-5 max-w-md leading-7">
+                Ayudamos a empresas públicas y privadas a fortalecer su operación
+                mediante soporte tecnológico, infraestructura TI, desarrollo de
+                software y automatización.
+              </p>
 
-              <div className="flex items-center gap-3">
-                <Mail className="h-5 w-5 text-blue-500" />
-                <span>gerencia.imtech@outlook.com</span>
+              <div className="mt-6 space-y-3">
+
+                <div className="flex items-center gap-3">
+                  <Mail className="h-5 w-5 text-blue-500" />
+                  <span>gerencia.imtech@outlook.com</span>
+                </div>
+
+                <div className="flex items-center gap-3">
+                  <MapPin className="h-5 w-5 text-blue-500" />
+                  <span>Tumaco, Nariño · Colombia</span>
+                </div>
+
               </div>
 
-              <div className="flex items-center gap-3">
-                <MapPin className="h-5 w-5 text-blue-500" />
-                <span>Colombia</span>
+              <div className="mt-7 flex gap-5 text-2xl">
+
+                <a
+                  href="https://linkedin.com/company/imtechco"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition hover:text-blue-500"
+                >
+                  <FaLinkedin />
+                </a>
+
+                <a
+                  href="https://github.com/imtechco"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition hover:text-blue-500"
+                >
+                  <FaGithub />
+                </a>
+
+                <a
+                  href="https://facebook.com/imtechco"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition hover:text-blue-500"
+                >
+                  <FaFacebook />
+                </a>
+
+                <a
+                  href="https://youtube.com/@imtechco"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="transition hover:text-blue-500"
+                >
+                  <FaYoutube />
+                </a>
+
               </div>
 
             </div>
 
-            <div className="mt-8 flex gap-5 text-2xl">
+            {/* Navegación */}
 
-              <a
-                href="https://linkedin.com/imtechco"
-                target="_blank"
-                className="transition hover:text-blue-500"
-              >
-                <FaLinkedin />
-              </a>
+            <div>
+              <h3 className="mb-5 text-lg font-semibold text-white">
+                Navegación
+              </h3>
 
-              <a
-                href="https://github.com/imtechco"
-                target="_blank"
-                className="transition hover:text-blue-500"
-              >
-                <FaGithub />
-              </a>
+              <ul className="space-y-3">
 
-              <a
-                href="https://facebook.com/imtechco"
-                target="_blank"
-                className="transition hover:text-blue-500"
-              >
-                <FaFacebook />
-              </a>
+                <li><a href="#home" className="hover:text-blue-500">Inicio</a></li>
+                <li><a href="#method" className="hover:text-blue-500">Método IM</a></li>
+                <li><a href="#services" className="hover:text-blue-500">Servicios</a></li>
+                <li><a href="#technologies" className="hover:text-blue-500">Tecnologías</a></li>
+                <li><a href="#contact" className="hover:text-blue-500">Contacto</a></li>
 
-              <a
-                href="https://youtube.com"
-                target="_blank"
-                className="transition hover:text-blue-500"
-              >
-                <FaYoutube />
-              </a>
-
+              </ul>
             </div>
-          </div>
 
-          {/* Servicios */}
-          <div>
-            <h3 className="mb-6 text-lg font-semibold text-white">
-              Servicios
-            </h3>
+            {/* Legal */}
 
-            <ul className="space-y-4">
-              <li><a href="#services" className="hover:text-blue-500">Desarrollo de Software</a></li>
-              <li><a href="#services" className="hover:text-blue-500">Automatización</a></li>
-              <li><a href="#services" className="hover:text-blue-500">Infraestructura</a></li>
-              <li><a href="#services" className="hover:text-blue-500">Inteligencia Artificial</a></li>
-            </ul>
-          </div>
+            <div>
+              <h3 className="mb-5 text-lg font-semibold text-white">
+                Información
+              </h3>
 
-          {/* Empresa */}
-          <div>
-            <h3 className="mb-6 text-lg font-semibold text-white">
-              Empresa
-            </h3>
+              <ul className="space-y-3">
 
-            <ul className="space-y-4">
-              <li><a href="#method" className="hover:text-blue-500">Método IM</a></li>
-              <li><a href="#technologies" className="hover:text-blue-500">Tecnologías</a></li>
-              <li><a href="#contact" className="hover:text-blue-500">Contacto</a></li>
-            </ul>
-          </div>
+                <li>
+                  <Link href="/privacy" className="hover:text-blue-500">
+                    Política de Privacidad
+                  </Link>
+                </li>
 
-          {/* Legal */}
-          <div>
-            <h3 className="mb-6 text-lg font-semibold text-white">
-              Legal
-            </h3>
+                <li>
+                  <Link href="/terms" className="hover:text-blue-500">
+                    Términos y Condiciones
+                  </Link>
+                </li>
 
-            <ul className="space-y-4">
-              <li>
-                <Link href="/privacy" className="hover:text-blue-500">
-                  Política de Privacidad
-                </Link>
-              </li>
+              </ul>
+            </div>
 
-              <li>
-                <Link href="/terms" className="hover:text-blue-500">
-                  Términos y Condiciones
-                </Link>
-              </li>
-            </ul>
           </div>
 
         </div>
       </FadeUp>
 
       <div className="border-t border-slate-800">
-        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-6 py-6 text-sm text-slate-500 md:flex-row">
-          <p>© 2026 IM Tech. Todos los derechos reservados.</p>
+        <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-6 py-5 text-sm md:flex-row">
 
           <p>
-            Desarrollado por <span className="text-white">IM Tech</span>
+            © 2026 IM Tech. Todos los derechos reservados.
           </p>
+
+          <p>
+            Tecnología para empresas • Colombia
+          </p>
+
         </div>
       </div>
     </footer>

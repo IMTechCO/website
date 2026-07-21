@@ -2,25 +2,26 @@ import { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://imtechco.vercel.app";
+  const lastModified = new Date();
 
   return [
     {
       url: baseUrl,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
+      lastModified,
+      changeFrequency: "monthly",
       priority: 1,
     },
     {
       url: `${baseUrl}/privacy`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "yearly",
-      priority: 0.4,
+      priority: 0.3,
     },
     {
       url: `${baseUrl}/terms`,
-      lastModified: new Date(),
+      lastModified,
       changeFrequency: "yearly",
-      priority: 0.4,
+      priority: 0.3,
     },
   ];
 }

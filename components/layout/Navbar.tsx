@@ -8,6 +8,7 @@ const links = [
   { name: "Inicio", href: "#home" },
   { name: "Servicios", href: "#services" },
   { name: "Método IM", href: "#method" },
+  { name: "Sectores", href: "#clients" },
   { name: "Tecnologías", href: "#technologies" },
   { name: "Contacto", href: "#contact" },
 ];
@@ -32,7 +33,7 @@ export default function Navbar() {
           : "border-transparent bg-slate-950/70 backdrop-blur-sm"
       }`}
     >
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-6">
+      <div className="mx-auto flex h-18 max-w-7xl items-center justify-between px-6">
         <a href="#home" className="select-none transition-transform duration-300 hover:scale-105">
             <h1 className="text-4xl font-extrabold tracking-tight">
                 <span className="text-slate-100">
@@ -56,7 +57,7 @@ export default function Navbar() {
             <a
               key={link.name}
               href={link.href}
-              className="font-medium text-slate-200 transition-colors duration-300 hover:text-blue-400"
+              className="relative font-medium text-slate-200 transition-all duration-300 hover:text-white after:absolute after:left-1/2 after:-bottom-2 after:h-[2px] after:w-0 after:-translate-x-1/2 after:bg-blue-500 after:transition-all after:duration-300 hover:after:w-full"
             >
               {link.name}
             </a>
@@ -65,9 +66,9 @@ export default function Navbar() {
 
         <a
           href="#contact"
-          className="hidden rounded-xl bg-blue-600 px-5 py-3 font-semibold text-white transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/30 md:block"
+          className="hidden rounded-lg bg-blue-600 px-4 py-2.5 font-semibold text-white transition-all duration-300 hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/30 md:block"
         >
-          Agendar consulta
+          Solicitar asesoría
         </a>
 
         <div className="md:hidden">

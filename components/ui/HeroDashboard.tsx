@@ -1,63 +1,66 @@
 import DashboardCard from "./DashboardCard";
-import { Cpu, Database, Activity, Sparkles } from "lucide-react";
+import {
+  ShieldCheck,
+  Network,
+  MonitorCog,
+  Code2,
+} from "lucide-react";
 
 export default function HeroDashboard() {
   return (
     <div className="relative">
 
-      {/* Glow de fondo */}
-      <div className="absolute inset-0 -z-10 rounded-3xl bg-blue-600/20 blur-3xl" />
+      {/* Glow */}
+      <div className="absolute inset-0 -z-10 rounded-3xl bg-blue-600/15 blur-2xl" />
 
-      {/* Dashboard */}
-      <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-6 shadow-2xl backdrop-blur-xl">
+      <div className="rounded-3xl border border-slate-800 bg-slate-900/70 p-5 shadow-2xl backdrop-blur-xl">
 
-        {/* Encabezado */}
+        {/* Header */}
+
         <div className="mb-8 flex items-center justify-between">
-          <div>
-            <p className="text-sm text-slate-400">
-              Estado General
-            </p>
 
+          <div>
+            
             <h3 className="text-2xl font-bold text-white">
-              IM Tech Dashboard
+              Soluciones Empresariales
             </h3>
           </div>
 
-          <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-blue-600">
-            <Cpu size={24} className="text-white" />
+          <div className="flex h-14 w-14 items-center justify-center rounded-2xl bg-blue-600 shadow-lg shadow-blue-600/30">
+            <ShieldCheck size={28} className="text-white" />
           </div>
-          
+
         </div>
 
-        {/* Tarjetas */}
-        <div className="grid grid-cols-2 gap-5">
+        {/* Cards */}
+
+        <div className="grid grid-cols-2 gap-4">
 
           <DashboardCard
-            icon={<Activity size={20} />}
-            title="Automatizaciones"
-            value="24"
-            description="Procesos activos"
+            icon={<MonitorCog size={20} />}
+            title="Soporte TI"
+            description="Atención tecnológica"
           />
 
           <DashboardCard
-            icon={<Database size={20} />}
-            title="Disponibilidad"
-            value="99.9%"
-            description="Infraestructura"
+            icon={<Network size={20} />}
+            title="Infraestructura"
+            
+            description="Redes y servidores"
           />
 
           <DashboardCard
-            icon={<Sparkles size={20} />}
-            title="APIs"
-            value="18"
-            description="Integraciones"
+            icon={<Code2 size={20} />}
+            title="Software"
+            
+            description="Desarrollo empresarial"
           />
 
           <DashboardCard
-            icon={<Cpu size={20} />}
-            title="IA"
-            value="Activa"
-            description="Procesando datos"
+            icon={<ShieldCheck size={20} />}
+            title="Seguridad"
+            
+            description="Continuidad del negocio"
           />
 
         </div>
